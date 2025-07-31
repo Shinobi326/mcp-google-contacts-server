@@ -98,7 +98,7 @@ def main():
         mcp.run(transport='stdio')
     else:
         print(f"Running with HTTP transport on {args.host}:{args.port}")
-        mcp.run(transport='http', host=args.host, port=args.port)
+        mcp.run(transport='http', port=args.port)
 
 if __name__ == "__main__":
     main()
